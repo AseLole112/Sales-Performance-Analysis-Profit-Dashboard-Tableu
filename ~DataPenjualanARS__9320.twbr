@@ -1,0 +1,1858 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0226.1626                               -->
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0226.1626)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='DataPenjualanARS' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='DatasetPenjualanToko' inline='true' name='federated.0y75oxt0ff0az41f1mxdw1qqc4e4' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='DatasetPenjualanToko' name='textscan.0t6cpbz1peitcp1a1v73f1fptysh'>
+            <connection class='textscan' directory='C:/Users/User/Downloads' filename='DatasetPenjualanToko.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0t6cpbz1peitcp1a1v73f1fptysh' name='DatasetPenjualanToko.csv' table='[DatasetPenjualanToko#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_ID' separator=';'>
+            <column datatype='string' name='Transaction_ID' ordinal='0' />
+            <column datatype='date' name='Date' ordinal='1' />
+            <column datatype='string' name='Product_Name' ordinal='2' />
+            <column datatype='string' name='Category' ordinal='3' />
+            <column datatype='integer' name='Units_Sold' ordinal='4' />
+            <column datatype='integer' name='Unit_Price' ordinal='5' />
+            <column datatype='integer' name='Revenue' ordinal='6' />
+            <column datatype='string' name='Store_Location' ordinal='7' />
+            <column datatype='string' name='Payment_Method' ordinal='8' />
+            <column datatype='string' name='Province' ordinal='9' />
+            <column datatype='integer' name='Unit Cost' ordinal='10' />
+            <column datatype='string' name='F12' ordinal='11' />
+            <column datatype='string' name='F13' ordinal='12' />
+            <column datatype='string' name='F14' ordinal='13' />
+            <column datatype='string' name='F15' ordinal='14' />
+            <column datatype='string' name='F16' ordinal='15' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[DatasetPenjualanToko.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Rp&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_ID&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transaction_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Transaction_ID]</local-name>
+            <parent-name>[DatasetPenjualanToko.csv]</parent-name>
+            <remote-alias>Transaction_ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[DatasetPenjualanToko.csv_48A86FBB4F1844B9A3B85B9A278882EC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[DatasetPenjualanToko.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[DatasetPenjualanToko.csv_48A86FBB4F1844B9A3B85B9A278882EC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Product_Name]</local-name>
+            <parent-name>[DatasetPenjualanToko.csv]</parent-name>
+            <remote-alias>Product_Name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[DatasetPenjualanToko.csv_48A86FBB4F1844B9A3B85B9A278882EC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[DatasetPenjualanToko.csv]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[DatasetPenjualanToko.csv_48A86FBB4F1844B9A3B85B9A278882EC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Units_Sold</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Units_Sold]</local-name>
+            <parent-name>[DatasetPenjualanToko.csv]</parent-name>
+            <remote-alias>Units_Sold</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[DatasetPenjualanToko.csv_48A86FBB4F1844B9A3B85B9A278882EC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unit_Price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Unit_Price]</local-name>
+            <parent-name>[DatasetPenjualanToko.csv]</parent-name>
+            <remote-alias>Unit_Price</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[DatasetPenjualanToko.csv_48A86FBB4F1844B9A3B85B9A278882EC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Revenue]</local-name>
+            <parent-name>[DatasetPenjualanToko.csv]</parent-name>
+            <remote-alias>Revenue</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[DatasetPenjualanToko.csv_48A86FBB4F1844B9A3B85B9A278882EC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Store_Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Store_Location]</local-name>
+            <parent-name>[DatasetPenjualanToko.csv]</parent-name>
+            <remote-alias>Store_Location</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[DatasetPenjualanToko.csv_48A86FBB4F1844B9A3B85B9A278882EC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Payment_Method</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Payment_Method]</local-name>
+            <parent-name>[DatasetPenjualanToko.csv]</parent-name>
+            <remote-alias>Payment_Method</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[DatasetPenjualanToko.csv_48A86FBB4F1844B9A3B85B9A278882EC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Province</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Province]</local-name>
+            <parent-name>[DatasetPenjualanToko.csv]</parent-name>
+            <remote-alias>Province</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[DatasetPenjualanToko.csv_48A86FBB4F1844B9A3B85B9A278882EC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unit Cost</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Unit Cost]</local-name>
+            <parent-name>[DatasetPenjualanToko.csv]</parent-name>
+            <remote-alias>Unit Cost</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[DatasetPenjualanToko.csv_48A86FBB4F1844B9A3B85B9A278882EC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F12</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F12]</local-name>
+            <parent-name>[DatasetPenjualanToko.csv]</parent-name>
+            <remote-alias>F12</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[DatasetPenjualanToko.csv_48A86FBB4F1844B9A3B85B9A278882EC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F13</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F13]</local-name>
+            <parent-name>[DatasetPenjualanToko.csv]</parent-name>
+            <remote-alias>F13</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[DatasetPenjualanToko.csv_48A86FBB4F1844B9A3B85B9A278882EC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F14</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F14]</local-name>
+            <parent-name>[DatasetPenjualanToko.csv]</parent-name>
+            <remote-alias>F14</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[DatasetPenjualanToko.csv_48A86FBB4F1844B9A3B85B9A278882EC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F15</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F15]</local-name>
+            <parent-name>[DatasetPenjualanToko.csv]</parent-name>
+            <remote-alias>F15</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[DatasetPenjualanToko.csv_48A86FBB4F1844B9A3B85B9A278882EC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F16</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F16]</local-name>
+            <parent-name>[DatasetPenjualanToko.csv]</parent-name>
+            <remote-alias>F16</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[DatasetPenjualanToko.csv_48A86FBB4F1844B9A3B85B9A278882EC]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Margin' datatype='integer' name='[Calculation_0640526180290562]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Unit_Price]-[Unit Cost]' />
+      </column>
+      <column caption='Profit' datatype='integer' name='[Calculation_0640526180708355]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_0640526180290562]*[Units_Sold]' />
+      </column>
+      <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[F12]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[F13]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[F14]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[F15]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[F16]' role='dimension' type='nominal' />
+      <column caption='Payment Method' datatype='string' name='[Payment_Method]' role='dimension' type='nominal' />
+      <column caption='Product Name' datatype='string' name='[Product_Name]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Province]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Store Location' datatype='string' name='[Store_Location]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Transaction ID' datatype='string' name='[Transaction_ID]' role='dimension' type='nominal' />
+      <column caption='Unit Price' datatype='integer' name='[Unit_Price]' role='measure' type='quantitative' />
+      <column caption='Units Sold' datatype='integer' name='[Units_Sold]' role='measure' type='quantitative' />
+      <column caption='DatasetPenjualanToko.csv' datatype='table' name='[__tableau_internal_object_id__].[DatasetPenjualanToko.csv_48A86FBB4F1844B9A3B85B9A278882EC]' role='measure' type='quantitative' />
+      <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Product_Name]' derivation='None' name='[none:Product_Name:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Province]' derivation='None' name='[none:Province:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/User/AppData/Local/Temp/TableauTemp/#TableauTemp_1k7dyrf1riswsi1eqx7dx1524ykr.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Transaction_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Transaction_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Transaction_ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>DatasetPenjualanToko.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>200000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>1</ordinal>
+              <family>DatasetPenjualanToko.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>3854</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Product_Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Product_Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Product_Name</remote-alias>
+              <ordinal>2</ordinal>
+              <family>DatasetPenjualanToko.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Category</remote-alias>
+              <ordinal>3</ordinal>
+              <family>DatasetPenjualanToko.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Units_Sold</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Units_Sold]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Units_Sold</remote-alias>
+              <ordinal>4</ordinal>
+              <family>DatasetPenjualanToko.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>55</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Unit_Price</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Unit_Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Unit_Price</remote-alias>
+              <ordinal>5</ordinal>
+              <family>DatasetPenjualanToko.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Revenue</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Revenue</remote-alias>
+              <ordinal>6</ordinal>
+              <family>DatasetPenjualanToko.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1471</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Store_Location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Store_Location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Store_Location</remote-alias>
+              <ordinal>7</ordinal>
+              <family>DatasetPenjualanToko.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>109</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Payment_Method</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Payment_Method]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Payment_Method</remote-alias>
+              <ordinal>8</ordinal>
+              <family>DatasetPenjualanToko.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Province</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Province]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Province</remote-alias>
+              <ordinal>9</ordinal>
+              <family>DatasetPenjualanToko.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Unit Cost</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Unit Cost]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Unit Cost</remote-alias>
+              <ordinal>10</ordinal>
+              <family>DatasetPenjualanToko.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Product_Name:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Pantene Shampoo 1L&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Rexona Deodorant&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Lifebuoy Body Wash&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Tolak Angin&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Sedaap Soto&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;ABC Kecap Manis 620ml&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Pocari Sweat 500ml&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Aqua 600ml&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Pepsodent Toothpaste&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Tolako Minuman Herbal&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Sari Roti Tawar&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Frisian Flag Susu Kental Manis&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Nabati Wafer&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Beras Maknyuss 5kg&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Bimoli Minyak Goreng 2L&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Milo 1kg&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;SilverQueen Milk Chocolate&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Indomilk UHT 1L&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Sampoerna Mild 16&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Indomie Goreng&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Province:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Banten&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Jawa Tengah&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Jawa Barat&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;DKI Jakarta&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Jawa Timur&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;DI Yogyakarta&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Category:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Drinks&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Personal Care&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Instant Noodles&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Snacks&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Health&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Smokes&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Groceries&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Indonesia&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Transaction_ID' />
+        <field-sort-custom-order field='Date' />
+        <field-sort-custom-order field='Product_Name' />
+        <field-sort-custom-order field='Category' />
+        <field-sort-custom-order field='Units_Sold' />
+        <field-sort-custom-order field='Unit_Price' />
+        <field-sort-custom-order field='Revenue' />
+        <field-sort-custom-order field='Store_Location' />
+        <field-sort-custom-order field='Payment_Method' />
+        <field-sort-custom-order field='Province' />
+        <field-sort-custom-order field='Unit Cost' />
+        <field-sort-custom-order field='Calculation_0640526180290562' />
+        <field-sort-custom-order field='Calculation_0640526180708355' />
+        <field-sort-custom-order field='Calculation_0640526180007936' />
+        <field-sort-custom-order field='Calculation_0640526180126721' />
+        <field-sort-custom-order field='F12' />
+        <field-sort-custom-order field='F13' />
+        <field-sort-custom-order field='F14' />
+        <field-sort-custom-order field='F15' />
+        <field-sort-custom-order field='F16' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='DatasetPenjualanToko.csv' id='DatasetPenjualanToko.csv_48A86FBB4F1844B9A3B85B9A278882EC'>
+            <properties context=''>
+              <relation connection='textscan.0t6cpbz1peitcp1a1v73f1fptysh' name='DatasetPenjualanToko.csv' table='[DatasetPenjualanToko#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_ID' separator=';'>
+                  <column datatype='string' name='Transaction_ID' ordinal='0' />
+                  <column datatype='date' name='Date' ordinal='1' />
+                  <column datatype='string' name='Product_Name' ordinal='2' />
+                  <column datatype='string' name='Category' ordinal='3' />
+                  <column datatype='integer' name='Units_Sold' ordinal='4' />
+                  <column datatype='integer' name='Unit_Price' ordinal='5' />
+                  <column datatype='integer' name='Revenue' ordinal='6' />
+                  <column datatype='string' name='Store_Location' ordinal='7' />
+                  <column datatype='string' name='Payment_Method' ordinal='8' />
+                  <column datatype='string' name='Province' ordinal='9' />
+                  <column datatype='integer' name='Unit Cost' ordinal='10' />
+                  <column datatype='string' name='F12' ordinal='11' />
+                  <column datatype='string' name='F13' ordinal='12' />
+                  <column datatype='string' name='F14' ordinal='13' />
+                  <column datatype='string' name='F15' ordinal='14' />
+                  <column datatype='string' name='F16' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Cost Product'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DatasetPenjualanToko' name='federated.0y75oxt0ff0az41f1mxdw1qqc4e4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0y75oxt0ff0az41f1mxdw1qqc4e4'>
+            <column caption='Product Name' datatype='string' name='[Product_Name]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Unit Cost]' role='measure' type='quantitative' />
+            <column-instance column='[Unit Cost]' derivation='Avg' name='[avg:Unit Cost:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Product_Name]' derivation='None' name='[none:Product_Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Unit Cost]' derivation='Sum' name='[sum:Unit Cost:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Product_Name:nk]' direction='DESC' using='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[sum:Unit Cost:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Product_Name:nk]</rows>
+        <cols>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[avg:Unit Cost:qk]</cols>
+      </table>
+      <simple-id uuid='{CB2E38F5-9C3E-4E8C-80E1-CB00066C92BD}' />
+    </worksheet>
+    <worksheet name='Margin Product'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DatasetPenjualanToko' name='federated.0y75oxt0ff0az41f1mxdw1qqc4e4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0y75oxt0ff0az41f1mxdw1qqc4e4'>
+            <column caption='Margin' datatype='integer' name='[Calculation_0640526180290562]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Unit_Price]-[Unit Cost]' />
+            </column>
+            <column caption='Profit' datatype='integer' name='[Calculation_0640526180708355]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_0640526180290562]*[Units_Sold]' />
+            </column>
+            <column caption='Product Name' datatype='string' name='[Product_Name]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Unit Cost]' role='measure' type='quantitative' />
+            <column caption='Unit Price' datatype='integer' name='[Unit_Price]' role='measure' type='quantitative' />
+            <column caption='Units Sold' datatype='integer' name='[Units_Sold]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_0640526180290562]' derivation='Avg' name='[avg:Calculation_0640526180290562:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0640526180708355]' derivation='Avg' name='[avg:Calculation_0640526180708355:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Product_Name]' derivation='None' name='[none:Product_Name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Product_Name:nk]' direction='DESC' using='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[avg:Calculation_0640526180708355:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Product_Name:nk]</rows>
+        <cols>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[avg:Calculation_0640526180290562:qk]</cols>
+      </table>
+      <simple-id uuid='{A01CFE25-D23A-45EA-990B-A7F5C5205FD8}' />
+    </worksheet>
+    <worksheet name='Price Product'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DatasetPenjualanToko' name='federated.0y75oxt0ff0az41f1mxdw1qqc4e4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0y75oxt0ff0az41f1mxdw1qqc4e4'>
+            <column caption='Product Name' datatype='string' name='[Product_Name]' role='dimension' type='nominal' />
+            <column caption='Unit Price' datatype='integer' name='[Unit_Price]' role='measure' type='quantitative' />
+            <column-instance column='[Unit_Price]' derivation='Avg' name='[avg:Unit_Price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Product_Name]' derivation='None' name='[none:Product_Name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Product_Name:nk]' direction='ASC' using='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[avg:Unit_Price:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Product_Name:nk]</rows>
+        <cols>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[avg:Unit_Price:qk]</cols>
+      </table>
+      <simple-id uuid='{534064EA-D278-4D00-99CC-AA1350226E78}' />
+    </worksheet>
+    <worksheet name='Profit Province'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DatasetPenjualanToko' name='federated.0y75oxt0ff0az41f1mxdw1qqc4e4' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0y75oxt0ff0az41f1mxdw1qqc4e4'>
+            <column caption='Margin' datatype='integer' name='[Calculation_0640526180290562]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Unit_Price]-[Unit Cost]' />
+            </column>
+            <column caption='Profit' datatype='integer' name='[Calculation_0640526180708355]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_0640526180290562]*[Units_Sold]' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Province]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='integer' name='[Unit Cost]' role='measure' type='quantitative' />
+            <column caption='Unit Price' datatype='integer' name='[Unit_Price]' role='measure' type='quantitative' />
+            <column caption='Units Sold' datatype='integer' name='[Units_Sold]' role='measure' type='quantitative' />
+            <column-instance column='[Province]' derivation='None' name='[none:Province:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0640526180708355]' derivation='Sum' name='[sum:Calculation_0640526180708355:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Province:nk]'>
+            <groupfilter function='level-members' level='[none:Province:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[yr:Date:ok]'>
+            <groupfilter function='level-members' level='[yr:Date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Province:nk]</column>
+            <column>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[yr:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[Longitude (generated)]' field-type='quantitative' max='12577508.66000169' min='11715669.351097552' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[Latitude (generated)]' field-type='quantitative' max='-543048.17129179114' min='-1031884.2535723759' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[sum:Calculation_0640526180708355:qk]' palette='green_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[sum:Calculation_0640526180708355:qk]' />
+              <text column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[sum:Calculation_0640526180708355:qk]' />
+              <lod column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Province:nk]' />
+              <geometry column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[Latitude (generated)]</rows>
+        <cols>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{4F96258D-13C7-47A9-AD2C-F086F1FD4C31}' />
+    </worksheet>
+    <worksheet name='Profit Trend'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DatasetPenjualanToko' name='federated.0y75oxt0ff0az41f1mxdw1qqc4e4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0y75oxt0ff0az41f1mxdw1qqc4e4'>
+            <column caption='Margin' datatype='integer' name='[Calculation_0640526180290562]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Unit_Price]-[Unit Cost]' />
+            </column>
+            <column caption='Profit' datatype='integer' name='[Calculation_0640526180708355]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_0640526180290562]*[Units_Sold]' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Unit Cost]' role='measure' type='quantitative' />
+            <column caption='Unit Price' datatype='integer' name='[Unit_Price]' role='measure' type='quantitative' />
+            <column caption='Units Sold' datatype='integer' name='[Units_Sold]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_0640526180708355]' derivation='Sum' name='[sum:Calculation_0640526180708355:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[yr:Date:ok]'>
+            <groupfilter function='level-members' level='[yr:Date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[yr:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+        </panes>
+        <rows>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[sum:Calculation_0640526180708355:qk]</rows>
+        <cols>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[mn:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{8B4F8022-77B1-4017-A098-797D4475A04B}' />
+    </worksheet>
+    <worksheet name='Top 6 Profit Store Location in Top Profit Province'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DatasetPenjualanToko' name='federated.0y75oxt0ff0az41f1mxdw1qqc4e4' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0y75oxt0ff0az41f1mxdw1qqc4e4'>
+            <column caption='Margin' datatype='integer' name='[Calculation_0640526180290562]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Unit_Price]-[Unit Cost]' />
+            </column>
+            <column caption='Profit' datatype='integer' name='[Calculation_0640526180708355]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_0640526180290562]*[Units_Sold]' />
+            </column>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Province]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Store Location' datatype='string' name='[Store_Location]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='integer' name='[Unit Cost]' role='measure' type='quantitative' />
+            <column caption='Unit Price' datatype='integer' name='[Unit_Price]' role='measure' type='quantitative' />
+            <column caption='Units Sold' datatype='integer' name='[Units_Sold]' role='measure' type='quantitative' />
+            <column-instance column='[Province]' derivation='None' name='[none:Province:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Store_Location]' derivation='None' name='[none:Store_Location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0640526180708355]' derivation='Sum' name='[sum:Calculation_0640526180708355:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Province:nk]'>
+            <groupfilter function='member' level='[none:Province:nk]' member='&quot;Jawa Timur&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Store_Location:nk]'>
+            <groupfilter count='6' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([Category])' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Bangkalan&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Banyuwangi&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Batu&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Blitar&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Bojonegoro&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Bondowoso&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Gresik&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Jember&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Jombang&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Kediri&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Lamongan&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Lumajang&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Madiun&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Magetan&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Malang&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Mojokerto&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Nganjuk&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Ngawi&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Pacitan&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Pamekasan&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Pasuruan&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Ponorogo&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Probolinggo&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Sampang&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Sidoarjo&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Situbondo&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Sumenep&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Surabaya&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Trenggalek&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Tuban&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Tulungagung&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[yr:Date:ok]'>
+            <groupfilter function='level-members' level='[yr:Date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Province:nk]</column>
+            <column>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[yr:Date:ok]</column>
+            <column>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Store_Location:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[Longitude (generated)]' field-type='quantitative' max='12795710.052217547' min='12238804.709305508' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[Latitude (generated)]' field-type='quantitative' max='-791302.37421241566' min='-935606.0697836288' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[sum:Calculation_0640526180708355:qk]' palette='green_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[sum:Calculation_0640526180708355:qk]' />
+              <text column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[sum:Calculation_0640526180708355:qk]' />
+              <lod column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Province:nk]' />
+              <lod column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Store_Location:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[Latitude (generated)]</rows>
+        <cols>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{7EE50391-1499-46A3-AF5B-A3192998EBCD}' />
+    </worksheet>
+    <worksheet name='Top 6 Profit Store Location in Top Profit Province Bar Chart'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DatasetPenjualanToko' name='federated.0y75oxt0ff0az41f1mxdw1qqc4e4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0y75oxt0ff0az41f1mxdw1qqc4e4'>
+            <column caption='Margin' datatype='integer' name='[Calculation_0640526180290562]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Unit_Price]-[Unit Cost]' />
+            </column>
+            <column caption='Profit' datatype='integer' name='[Calculation_0640526180708355]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_0640526180290562]*[Units_Sold]' />
+            </column>
+            <column datatype='string' name='[Province]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Store Location' datatype='string' name='[Store_Location]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='integer' name='[Unit Cost]' role='measure' type='quantitative' />
+            <column caption='Unit Price' datatype='integer' name='[Unit_Price]' role='measure' type='quantitative' />
+            <column caption='Units Sold' datatype='integer' name='[Units_Sold]' role='measure' type='quantitative' />
+            <column-instance column='[Province]' derivation='None' name='[none:Province:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Store_Location]' derivation='None' name='[none:Store_Location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0640526180708355]' derivation='Sum' name='[sum:Calculation_0640526180708355:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Province:nk]'>
+            <groupfilter function='member' level='[none:Province:nk]' member='&quot;Jawa Timur&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Store_Location:nk]'>
+            <groupfilter count='6' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Calculation_0640526180708355])' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Bangkalan&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Banyuwangi&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Batu&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Blitar&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Bojonegoro&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Bondowoso&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Gresik&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Jember&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Jombang&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Kediri&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Lamongan&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Lumajang&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Madiun&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Magetan&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Malang&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Mojokerto&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Nganjuk&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Ngawi&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Pacitan&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Pamekasan&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Pasuruan&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Ponorogo&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Probolinggo&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Sampang&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Sidoarjo&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Situbondo&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Sumenep&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Surabaya&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Trenggalek&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Tuban&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Tulungagung&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Store_Location:nk]' direction='DESC' using='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[sum:Calculation_0640526180708355:qk]' />
+          <slices>
+            <column>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Province:nk]</column>
+            <column>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Store_Location:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[sum:Calculation_0640526180708355:qk]' palette='green_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[sum:Calculation_0640526180708355:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Store_Location:nk]</rows>
+        <cols>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[sum:Calculation_0640526180708355:qk]</cols>
+      </table>
+      <simple-id uuid='{9B8835FB-38B0-4973-8747-518BA569AA10}' />
+    </worksheet>
+    <worksheet name='Top Product Sold in Store Location from Top Province'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DatasetPenjualanToko' name='federated.0y75oxt0ff0az41f1mxdw1qqc4e4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0y75oxt0ff0az41f1mxdw1qqc4e4'>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column caption='Product Name' datatype='string' name='[Product_Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Province]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Store Location' datatype='string' name='[Store_Location]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column caption='Units Sold' datatype='integer' name='[Units_Sold]' role='measure' type='quantitative' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product_Name]' derivation='None' name='[none:Product_Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Province]' derivation='None' name='[none:Province:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Store_Location]' derivation='None' name='[none:Store_Location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Units_Sold]' derivation='Sum' name='[sum:Units_Sold:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Category:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Units_Sold])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Category:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Category:nk]' direction='DESC' using='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[sum:Units_Sold:qk]' />
+          <computed-sort column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Product_Name:nk]' direction='DESC' using='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[sum:Units_Sold:qk]' />
+          <filter class='categorical' column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Province:nk]'>
+            <groupfilter function='member' level='[none:Province:nk]' member='&quot;Jawa Timur&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Store_Location:nk]'>
+            <groupfilter count='6' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Units_Sold])' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Bangkalan&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Banyuwangi&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Batu&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Blitar&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Bojonegoro&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Bondowoso&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Gresik&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Jember&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Jombang&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Kediri&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Lamongan&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Lumajang&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Madiun&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Magetan&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Malang&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Mojokerto&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Nganjuk&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Ngawi&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Pacitan&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Pamekasan&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Pasuruan&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Ponorogo&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Probolinggo&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Sampang&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Sidoarjo&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Situbondo&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Sumenep&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Surabaya&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Trenggalek&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Tuban&quot;' />
+                  <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Tulungagung&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Store_Location:nk]' direction='DESC' using='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[sum:Units_Sold:qk]' />
+          <slices>
+            <column>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Province:nk]</column>
+            <column>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Store_Location:nk]</column>
+            <column>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Product_Name:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Category:nk] / [federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Product_Name:nk])</rows>
+        <cols>(([federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Store_Location:nk] / [federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Province:nk]) * [federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[sum:Units_Sold:qk])</cols>
+      </table>
+      <simple-id uuid='{D5680164-E56B-4564-A510-6DF31227F429}' />
+    </worksheet>
+    <worksheet name='Top Profit Product from Sold'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DatasetPenjualanToko' name='federated.0y75oxt0ff0az41f1mxdw1qqc4e4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0y75oxt0ff0az41f1mxdw1qqc4e4'>
+            <column caption='Margin' datatype='integer' name='[Calculation_0640526180290562]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Unit_Price]-[Unit Cost]' />
+            </column>
+            <column caption='Profit' datatype='integer' name='[Calculation_0640526180708355]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_0640526180290562]*[Units_Sold]' />
+            </column>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column caption='Product Name' datatype='string' name='[Product_Name]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Unit Cost]' role='measure' type='quantitative' />
+            <column caption='Unit Price' datatype='integer' name='[Unit_Price]' role='measure' type='quantitative' />
+            <column caption='Units Sold' datatype='integer' name='[Units_Sold]' role='measure' type='quantitative' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product_Name]' derivation='None' name='[none:Product_Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0640526180708355]' derivation='Sum' name='[sum:Calculation_0640526180708355:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Category:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Calculation_0640526180708355])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Category:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Category:nk]' direction='DESC' using='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[sum:Calculation_0640526180708355:qk]' />
+          <computed-sort column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Product_Name:nk]' direction='DESC' using='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[sum:Calculation_0640526180708355:qk]' />
+          <slices>
+            <column>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Category:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Category:nk] / [federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Product_Name:nk])</rows>
+        <cols>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[sum:Calculation_0640526180708355:qk]</cols>
+      </table>
+      <simple-id uuid='{28568F3C-CACD-48C1-85BE-5939F3940C42}' />
+    </worksheet>
+    <worksheet name='Top Profit Province'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DatasetPenjualanToko' name='federated.0y75oxt0ff0az41f1mxdw1qqc4e4' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0y75oxt0ff0az41f1mxdw1qqc4e4'>
+            <column caption='Margin' datatype='integer' name='[Calculation_0640526180290562]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Unit_Price]-[Unit Cost]' />
+            </column>
+            <column caption='Profit' datatype='integer' name='[Calculation_0640526180708355]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_0640526180290562]*[Units_Sold]' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Province]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Store Location' datatype='string' name='[Store_Location]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='integer' name='[Unit Cost]' role='measure' type='quantitative' />
+            <column caption='Unit Price' datatype='integer' name='[Unit_Price]' role='measure' type='quantitative' />
+            <column caption='Units Sold' datatype='integer' name='[Units_Sold]' role='measure' type='quantitative' />
+            <column-instance column='[Province]' derivation='None' name='[none:Province:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Store_Location]' derivation='None' name='[none:Store_Location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0640526180708355]' derivation='Sum' name='[sum:Calculation_0640526180708355:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Province:nk]'>
+            <groupfilter function='member' level='[none:Province:nk]' member='&quot;Jawa Timur&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Store_Location:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Bangkalan&quot;' />
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Banyuwangi&quot;' />
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Batu&quot;' />
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Blitar&quot;' />
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Bojonegoro&quot;' />
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Bondowoso&quot;' />
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Gresik&quot;' />
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Jember&quot;' />
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Jombang&quot;' />
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Kediri&quot;' />
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Lamongan&quot;' />
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Lumajang&quot;' />
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Madiun&quot;' />
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Magetan&quot;' />
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Malang&quot;' />
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Mojokerto&quot;' />
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Nganjuk&quot;' />
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Ngawi&quot;' />
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Pacitan&quot;' />
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Pamekasan&quot;' />
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Pasuruan&quot;' />
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Ponorogo&quot;' />
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Probolinggo&quot;' />
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Sampang&quot;' />
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Sidoarjo&quot;' />
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Situbondo&quot;' />
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Sumenep&quot;' />
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Surabaya&quot;' />
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Trenggalek&quot;' />
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Tuban&quot;' />
+              <groupfilter function='member' level='[none:Store_Location:nk]' member='&quot;Tulungagung&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[yr:Date:ok]'>
+            <groupfilter function='level-members' level='[yr:Date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Province:nk]</column>
+            <column>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[yr:Date:ok]</column>
+            <column>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Store_Location:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[Longitude (generated)]' field-type='quantitative' max='12809320.666907623' min='12270107.871060979' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[Latitude (generated)]' field-type='quantitative' max='-724885.49464405095' min='-964995.60968834045' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[sum:Calculation_0640526180708355:qk]' palette='green_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[sum:Calculation_0640526180708355:qk]' />
+              <text column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[sum:Calculation_0640526180708355:qk]' />
+              <lod column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Province:nk]' />
+              <lod column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Store_Location:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[Latitude (generated)]</rows>
+        <cols>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{14E72FA3-13EF-4063-9075-2908EB5D5B8B}' />
+    </worksheet>
+    <worksheet name='Top Sold Product'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DatasetPenjualanToko' name='federated.0y75oxt0ff0az41f1mxdw1qqc4e4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0y75oxt0ff0az41f1mxdw1qqc4e4'>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column caption='Product Name' datatype='string' name='[Product_Name]' role='dimension' type='nominal' />
+            <column caption='Units Sold' datatype='integer' name='[Units_Sold]' role='measure' type='quantitative' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product_Name]' derivation='None' name='[none:Product_Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Units_Sold]' derivation='Sum' name='[sum:Units_Sold:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Category:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Units_Sold])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Category:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Category:nk]' direction='DESC' using='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[sum:Units_Sold:qk]' />
+          <computed-sort column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Product_Name:nk]' direction='DESC' using='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[sum:Units_Sold:qk]' />
+          <slices>
+            <column>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Category:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Category:nk] / [federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Product_Name:nk])</rows>
+        <cols>[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[sum:Units_Sold:qk]</cols>
+      </table>
+      <simple-id uuid='{DBAD46E2-B5AD-4897-AED4-F7F92627BB74}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Meningkatkan Keuntungan ARS Store di Semua Wilayah' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='3423' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='4253' />
+            <zone h='84440' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='14730'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Keuntungan Perbulan dari Tahun 2023 dan 2024' captured-sheet='Profit Trend' id='1' />
+                  <story-point caption='Price vs Margin vs Cost Product' captured-sheet='Price vs Margin Product' id='4' />
+                  <story-point caption='Produk Paling Laku ' captured-sheet='Top Sold Product' id='5' />
+                  <story-point caption='Produk Penyumbang Profit Terbesar' captured-sheet='Top Profit Product from Sold' id='6' />
+                  <story-point caption='Profit tiap Provinsi ' captured-sheet='Profit Province' id='7'>
+                    <capturedDeltas>
+                      <worksheet name='Profit Province'>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <encoding attr='space' class='0' field='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[Latitude (generated)]' field-type='quantitative' max='-384542.74057247641' min='-1271032.3489261647' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                            <encoding attr='space' class='0' field='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[Longitude (generated)]' field-type='quantitative' max='12603147.095162868' min='11687738.149735352' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                          </style-rule>
+                        </style>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Provinsi dengan Profit Terbesar' captured-sheet='Profit Province' id='8'>
+                    <capturedDeltas>
+                      <worksheet name='Profit Province'>
+                        <filter class='categorical' column='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Province:nk]'>
+                          <groupfilter function='member' level='[none:Province:nk]' member='&quot;Jawa Timur&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <encoding attr='space' class='0' field='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[Latitude (generated)]' field-type='quantitative' projection='EPSG:3857' scope='rows' type='space' />
+                            <encoding attr='space' class='0' field='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[Longitude (generated)]' field-type='quantitative' projection='EPSG:3857' scope='cols' type='space' />
+                          </style-rule>
+                        </style>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Profit Store yang ada di Porvinsi Jawa Timur' captured-sheet='Top Profit Province' id='9' />
+                  <story-point caption='Enam Kota dengan Profit Terbesar di Porvinsi Jawa Timur' captured-sheet='Top 6 Profit Store Location in Top Profit Province' id='10' />
+                  <story-point caption='Produk dengan Jumlah Laku Terbanyak di 6 kota teratas di Provinsi Jawa Timur' captured-sheet='Top Product Sold in Store Location from Top Province' id='11' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone flipboard-zone-id='5' h='11307' hidden='true' id='6' story-point-id='6' type-v2='text' w='28642' x='51870' y='39523'>
+          <formatted-text>
+            <run>Produk Pantene, Beras Maknyuss, dan Milo 1KG menjadi penyumpang profit di atas rata-rata
+</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <simple-id uuid='{8181D0D8-A28E-4E67-B934-438DB25DE2E3}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Price vs Margin Product'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97264' id='3' name='Price Product' w='32000' x='1231' y='1368'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='97264' id='5' name='Margin Product' w='35846' x='33231' y='1368'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='97264' id='6' name='Cost Product' w='29692' x='69077' y='1368'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='900' minheight='900' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='8' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97264' id='7' param='vert' type-v2='layout-flow' w='97538' x='1231' y='1368'>
+                <zone fixed-size='280' h='97264' id='3' is-fixed='true' name='Price Product' w='32000' x='1231' y='1368'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='97264' id='5' is-fixed='true' name='Margin Product' w='35846' x='33231' y='1368'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='97264' id='6' is-fixed='true' name='Cost Product' w='29692' x='69077' y='1368'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{38D4EBA5-57C6-420E-A64C-F210D7A8B209}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Profit Trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[yr:Date:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8EBC4E79-E8B3-4F9F-B2DD-F4FE62E262B9}' />
+    </window>
+    <window class='worksheet' name='Price Product'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{36E0DD32-9CD5-4FD3-A651-AC554CAA36CA}' />
+    </window>
+    <window class='worksheet' name='Margin Product'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CDC1C3BA-69FB-40AF-8A76-30BEA85546E6}' />
+    </window>
+    <window class='worksheet' name='Cost Product'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8DDFBA1C-D664-497E-A696-52439D546527}' />
+    </window>
+    <window class='worksheet' name='Top Sold Product'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D67A140B-9202-4EEC-AF81-067D85BE5CCC}' />
+    </window>
+    <window class='worksheet' name='Top Profit Product from Sold'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5BA0B2AF-5CCD-487E-A1F4-4D25434031BB}' />
+    </window>
+    <window class='worksheet' name='Profit Province'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[yr:Date:ok]' type='filter' />
+            <card param='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Province:nk]' type='filter' />
+            <card pane-specification-id='2' param='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[sum:Calculation_0640526180708355:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1D53FD2A-696D-42B8-B603-114EC279D398}' />
+    </window>
+    <window class='worksheet' name='Top Profit Province'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[yr:Date:ok]' type='filter' />
+            <card param='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Province:nk]' type='filter' />
+            <card pane-specification-id='2' param='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[sum:Calculation_0640526180708355:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D8C46AC6-BDDE-4FE5-B461-52DBAD681549}' />
+    </window>
+    <window class='worksheet' name='Top 6 Profit Store Location in Top Profit Province'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[yr:Date:ok]' type='filter' />
+            <card param='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Province:nk]' type='filter' />
+            <card pane-specification-id='2' param='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[sum:Calculation_0640526180708355:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4AA17591-2848-4F92-8A09-EB48286485E0}' />
+    </window>
+    <window class='worksheet' name='Top 6 Profit Store Location in Top Profit Province Bar Chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Province:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[sum:Calculation_0640526180708355:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{25884C80-7FE0-4FFE-B341-D0B635898105}' />
+    </window>
+    <window class='worksheet' name='Top Product Sold in Store Location from Top Province'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0y75oxt0ff0az41f1mxdw1qqc4e4].[none:Product_Name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AB62D5D8-E8BB-46B1-BC0B-AFFF18F14397}' />
+    </window>
+    <window class='dashboard' name='Price vs Margin Product'>
+      <viewpoints>
+        <viewpoint name='Cost Product' />
+        <viewpoint name='Margin Product' />
+        <viewpoint name='Price Product' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{EB8E69BC-DC6E-4C4F-B0FE-6D794C645992}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Meningkatkan Keuntungan ARS Store di Semua Wilayah'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{1FD06D68-9E03-46A9-B49A-5B6203968E51}' />
+    </window>
+  </windows>
+</workbook>
